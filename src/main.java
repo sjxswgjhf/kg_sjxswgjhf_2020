@@ -45,6 +45,6 @@ public class main {
         }catch (IndexOutOfBoundsException e){
             System.out.println("Please input two string arguments");
         }
-        System.out.print(oneToOne(s1, s2));
+        System.out.println(oneToOne(s1, s2));
     }
 }
