@@ -1,8 +1,16 @@
 import java.util.*;
 
 public class main {
-
+    /*
+        assumption: s1 & s2 have to be same length and s1 & s2 can not be empty
+     */
     public static boolean oneToOne(String s1, String s2){
+        if(s1 == null || s1.length() == 0){
+            return false;
+        }
+        if(s1.length() != s2.length()){
+            return false;
+        }
         HashMap<Character, Character> map = new HashMap<>();
         for(int i = 0; i < s1.length(); i++){
             char c1 = s1.charAt(i);
